@@ -5,7 +5,10 @@
  *
  * V 1.0.0  9/7/2021
  */
-#define Serial Serial3
+
+#if defined(Serial3)
+  #define Serial Serial3
+#endif
 
 #include <Arduino.h>
 #include <avr/pgmspace.h>
